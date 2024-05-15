@@ -1,0 +1,27 @@
+.sideBarItem:hover{
+    -fx-border-color: #16323f;
+    -fx-border-width: 0px 0px 0px 10px;
+    -fx-fill-width: bold;
+
+}
+.logoHb{
+    -fx-border-color: #16323f;
+    -fx-border-width: 10px 10px 10px 0px;
+}
+.emergencyBtn:hover{
+    -fx-border-color: BLACK ;
+-fx-border-width: 5;
+}
+
+.logInBtn{
+    -fx-background-color: #ff746c;
+    -fx-text-fill: WHITE
+}
+
+.logInBtn:hover{
+-fx-background-color:  WHITE;
+    -fx-text-fill: #ff746c;
+    -fx-border-color:#ff746c ;
+-fx-fill-width: bold;
+}
+

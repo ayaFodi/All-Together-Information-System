@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="600.0" prefWidth="860.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.FirstPageController">
+
+    <children>
+        <VBox alignment="CENTER" prefHeight="600.0" prefWidth="430.0" style="-fx-background-color: #ff746c;" stylesheets="@Style.css">
+            <children>
+                <Label alignment="CENTER" prefHeight="81.0" prefWidth="342.0" text=" Emergency Click" textFill="#250c0c">
+                    <font>
+                        <Font name="Britannic Bold" size="44.0" />
+                    </font>
+                </Label>
+                <Button fx:id="emergencyBtn" cache="true" cacheHint="SPEED" mnemonicParsing="false" onAction="#onEmergency" prefHeight="226.0" prefWidth="239.0" style="-fx-background-color: #ff746c;" styleClass="emergencyBtn" stylesheets="@Style.css">
+                    <graphic>
+                        <ImageView fx:id="image" fitHeight="258.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/emergency3.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+            </children>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="430.0">
+            <children>
+                <HBox prefHeight="60.0" prefWidth="430.0" />
+                <HBox prefHeight="128.0" prefWidth="400.0">
+                    <children>
+                        <Label alignment="TOP_CENTER" prefHeight="124.0" prefWidth="400.0" text="Sign In" textFill="#ff746c">
+                            <font>
+                                <Font name="Comic Sans MS" size="59.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <opaqueInsets>
+                        <Insets left="20.0" />
+                    </opaqueInsets>
+                </HBox>
+                <HBox prefHeight="106.0" prefWidth="400.0">
+                    <children>
+                        <TextField fx:id="userNameTextField" prefHeight="17.0" prefWidth="260.0" promptText="Username">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox prefHeight="93.0" prefWidth="400.0">
+                    <children>
+                        <TextField fx:id="passwordTextField" prefHeight="40.0" prefWidth="260.0" promptText="Password">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox fx:id="textLavel" prefHeight="63.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="textLable" prefHeight="38.0" prefWidth="398.0" textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+                </HBox>
+                  <Button fx:id="logInBtn" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="40.0" prefWidth="150.0" styleClass="logInBtn" stylesheets="@Style.css" text="Login" textFill="WHITE">
+                      <effect>
+                          <Blend mode="RED" />
+                      </effect>
+                      <font>
+                          <Font name="AGA Arabesque" size="27.0" />
+                      </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                  </Button>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <padding>
+                <Insets left="30.0" />
+            </padding>
+        </VBox>
+    </children>
+
+</HBox>
